@@ -1,0 +1,182 @@
+/* ===========================
+   VIATOR CLARITATIS STYLE
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia, serif;
+    background:#080808;
+    color:#eee;
+    line-height:1.8;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(10px);
+    text-align:center;
+    z-index:1000;
+    border-bottom:1px solid #5c4818;
+}
+
+nav a{
+    color:#d4af37;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#fff;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:120px 20px 80px;
+    background:
+    radial-gradient(circle,#2b2415 0%,#111 55%,#000 100%);
+}
+
+.hero img{
+    width:180px;
+    margin-bottom:30px;
+    filter:drop-shadow(0 0 25px rgba(212,175,55,.45));
+}
+
+.hero h1{
+    font-size:64px;
+    color:#d4af37;
+    letter-spacing:5px;
+}
+
+.hero h2{
+    color:white;
+    font-weight:normal;
+    margin-top:20px;
+    font-size:28px;
+}
+
+.hero p{
+    max-width:760px;
+    margin-top:35px;
+    font-size:22px;
+    color:#ddd;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    margin-top:45px;
+    padding:16px 42px;
+    background:#d4af37;
+    color:#111;
+    text-decoration:none;
+    border-radius:35px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:translateY(-3px);
+}
+
+/* SECTION */
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:90px 25px;
+}
+
+section h2{
+    color:#d4af37;
+    margin-bottom:25px;
+    font-size:36px;
+}
+
+/* CARD */
+
+.card{
+    background:#151515;
+    border:1px solid #3c3215;
+    border-radius:18px;
+    padding:30px;
+    margin-top:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 25px rgba(212,175,55,.18);
+}
+
+/* QUOTE */
+
+.quote{
+    padding:80px 20px;
+    text-align:center;
+    font-size:30px;
+    font-style:italic;
+    color:#d4af37;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:35px;
+    color:#888;
+    border-top:1px solid #333;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav a{
+    margin:0 8px;
+    font-size:13px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+}
