@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://isuryas212.github.io/Viator-Claritatis/sitemap.xml
