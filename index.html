@@ -6,60 +6,130 @@
 <title>Viator Claritatis</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 font-family:Georgia,serif;
-background:#0f0f0f;
+background:#0d0d0d;
 color:#f5f5f5;
 line-height:1.8;
 }
 
-header{
-background:linear-gradient(135deg,#1c1c1c,#3d2b1f);
-padding:80px 20px;
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.9);
+padding:15px;
 text-align:center;
+z-index:1000;
 }
 
-header h1{
-font-size:50px;
-margin:0;
+nav a{
+color:#d4af37;
+text-decoration:none;
+margin:0 18px;
+font-weight:bold;
+transition:.3s;
 }
 
-header p{
-font-size:20px;
+nav a:hover{
+color:white;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+background:linear-gradient(180deg,#000,#1d1b18,#000);
+}
+
+.hero h1{
+font-size:60px;
+letter-spacing:3px;
+color:#d4af37;
+}
+
+.hero p{
+margin-top:20px;
+font-size:22px;
+max-width:700px;
 color:#ddd;
 }
 
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:15px 35px;
+background:#d4af37;
+color:#111;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
 section{
-max-width:900px;
+max-width:1000px;
 margin:auto;
-padding:50px 20px;
+padding:90px 25px;
 }
 
 h2{
-color:#d8b36a;
+color:#d4af37;
+margin-bottom:25px;
+font-size:34px;
 }
 
-.manifesto{
+.card{
 background:#1b1b1b;
-padding:30px;
-border-left:5px solid #d8b36a;
-font-style:italic;
-font-size:22px;
+padding:25px;
+border-radius:15px;
+margin-top:25px;
 }
 
 .quote{
+font-size:28px;
 text-align:center;
-font-size:24px;
-padding:30px;
-color:#d8b36a;
+font-style:italic;
+color:#d4af37;
+padding:60px 20px;
 }
 
 footer{
-text-align:center;
+background:#000;
 padding:30px;
-background:#111;
+text-align:center;
 color:#888;
+}
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
 }
 </style>
 
@@ -67,58 +137,123 @@ color:#888;
 
 <body>
 
-<header>
-<h1>Viator Claritatis</h1>
-<p>A Journey Toward Clarity Through Observation, Reflection, and Wisdom.</p>
-</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">Tentang</a>
+<a href="#book">Buku</a>
+<a href="#aphorism">Aforisma</a>
+<a href="#contact">Kontak</a>
+</nav>
 
-<section>
+<section class="hero" id="home">
 
-<h2>Tentang</h2>
+<h1>VIATOR CLARITATIS</h1>
 
 <p>
-Viator Claritatis adalah perjalanan menuju kejernihan.
-Bukan untuk memaksakan keyakinan,
-melainkan mengamati realitas,
-menguji pengalaman,
-dan menemukan makna melalui kehidupan itu sendiri.
+A Journey Toward Clarity Through Observation,
+Reflection, and Wisdom.
 </p>
+
+<a class="btn" href="#about">
+Masuk ke Perjalanan
+</a>
 
 </section>
 
-<section>
+<section id="about">
 
-<h2>Manifesto</h2>
+<h2>Tentang</h2>
 
-<div class="manifesto">
+<div class="card">
 
-Jangan percaya.<br>
-Amati.<br>
-Uji.<br>
-Nilai sendiri.
+<p>
+
+Viator Claritatis bukanlah sebuah dogma.
+
+Ia adalah perjalanan.
+
+Perjalanan untuk melihat realitas
+sebelum menafsirkannya.
+
+Perjalanan untuk mengamati,
+menguji,
+dan akhirnya menemukan
+kejernihan.
+
+</p>
 
 </div>
 
 </section>
 
-<section>
+<section id="book">
 
-<h2>Buku</h2>
+<h2>Via Silentii et Claritatis</h2>
+
+<div class="card">
 
 <p>
-<b>Via Silentii et Claritatis</b><br>
-Pedoman bagi setiap pengembara yang memilih kejernihan
-daripada kepastian semu.
+
+Pedoman seorang Viator.
+
+Buku ini mengajak pembaca
+meninggalkan kepastian palsu
+dan memasuki perjalanan
+menuju kejernihan.
+
 </p>
+
+</div>
+
+</section>
+
+<section id="aphorism">
+
+<h2>Manifesto</h2>
+
+<div class="card">
+
+<h3>
+
+Jangan percaya.
+
+Amati.
+
+Uji.
+
+Nilai sendiri.
+
+</h3>
+
+</div>
 
 </section>
 
 <div class="quote">
 
-"Tujuan hanya membuat hidup menjadi membosankan.
-Hidup adalah perjalanan yang tak pernah selesai."
+"Hidup bukan tujuan.
+
+Hidup adalah perjalanan."
 
 </div>
+
+<section id="contact">
+
+<h2>Kontak</h2>
+
+<div class="card">
+
+<p>
+
+Website resmi Viator Claritatis.
+
+Masih dalam tahap pengembangan.
+
+</p>
+
+</div>
+
+</section>
 
 <footer>
 
