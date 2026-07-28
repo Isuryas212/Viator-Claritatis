@@ -1,123 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Viator Claritatis</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Georgia,serif;
-background:#0d0d0d;
-color:#f5f5f5;
-line-height:1.8;
-}
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:rgba(0,0,0,.9);
-padding:15px;
-text-align:center;
-z-index:1000;
-}
-
-nav a{
-color:#d4af37;
-text-decoration:none;
-margin:0 18px;
-font-weight:bold;
-transition:.3s;
-}
-
-nav a:hover{
-color:white;
-}
-
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-text-align:center;
-padding:20px;
-background:linear-gradient(180deg,#000,#1d1b18,#000);
-}
-
-.hero h1{
-font-size:60px;
-letter-spacing:3px;
-color:#d4af37;
-}
-
-.hero p{
-margin-top:20px;
-font-size:22px;
-max-width:700px;
-color:#ddd;
-}
-
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:15px 35px;
-background:#d4af37;
-color:#111;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-background:white;
-}
-
-section{
-max-width:1000px;
-margin:auto;
-padding:90px 25px;
-}
-
-h2{
-color:#d4af37;
-margin-bottom:25px;
-font-size:34px;
-}
-
-.card{
-background:#1b1b1b;
-padding:25px;
-border-radius:15px;
-margin-top:25px;
-}
-
-.quote{
-font-size:28px;
-text-align:center;
-font-style:italic;
-color:#d4af37;
-padding:60px 20px;
-}
-
-footer{
-background:#000;
-<!DOCTYPE html>
-<html lang="id">
-<head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Viator Claritatis</title>
+<title>Viator Claritatis | Pengembara Kejernihan</title>
 
 <style>
 
@@ -127,37 +15,59 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-font-family:Georgia,serif;
-background:#0d0d0d;
-color:#f5f5f5;
+
+font-family:"Georgia",serif;
+background:#080808;
+color:#eee;
 line-height:1.8;
+
 }
 
 
+/* NAV */
+
 nav{
+
 position:fixed;
 top:0;
 width:100%;
-background:rgba(0,0,0,.9);
-padding:15px;
+padding:18px;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
 text-align:center;
 z-index:1000;
+border-bottom:1px solid #5c4818;
+
 }
 
 
 nav a{
+
 color:#d4af37;
 text-decoration:none;
-margin:0 18px;
-font-weight:bold;
+margin:0 15px;
+font-size:14px;
+letter-spacing:1px;
+
+transition:.3s;
+
 }
 
 
 nav a:hover{
+
 color:white;
+
 }
 
+
+
+/* HERO */
 
 .hero{
 
@@ -167,43 +77,55 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 text-align:center;
-padding:20px;
-background:linear-gradient(180deg,#000,#1d1b18,#000);
+padding:30px;
+
+background:
+
+radial-gradient(circle,#292014,#050505 70%);
 
 }
+
 
 
 .hero img{
 
+width:190px;
 margin-bottom:30px;
 
+filter:drop-shadow(0 0 20px #d4af37);
+
 }
+
 
 
 .hero h1{
 
 font-size:60px;
-letter-spacing:3px;
+letter-spacing:6px;
 color:#d4af37;
+text-shadow:0 0 20px #5c4818;
 
 }
+
 
 
 .hero h2{
 
-color:#fff;
-font-size:28px;
 margin-top:15px;
+font-size:26px;
+font-weight:normal;
+color:#fff;
 
 }
 
 
+
 .hero p{
 
-margin-top:25px;
-font-size:22px;
 max-width:750px;
-color:#ddd;
+margin-top:25px;
+font-size:21px;
+color:#ccc;
 
 }
 
@@ -211,24 +133,35 @@ color:#ddd;
 
 .btn{
 
-display:inline-block;
 margin-top:35px;
-padding:15px 35px;
+padding:15px 40px;
 background:#d4af37;
 color:#111;
+border-radius:50px;
 text-decoration:none;
-border-radius:30px;
 font-weight:bold;
+transition:.4s;
 
 }
 
+
+.btn:hover{
+
+background:white;
+transform:translateY(-5px);
+
+}
+
+
+
+/* SECTION */
 
 
 section{
 
 max-width:1000px;
 margin:auto;
-padding:90px 25px;
+padding:100px 25px;
 
 }
 
@@ -237,31 +170,67 @@ padding:90px 25px;
 h2{
 
 color:#d4af37;
-margin-bottom:25px;
-font-size:34px;
+font-size:36px;
+margin-bottom:30px;
+letter-spacing:2px;
 
 }
 
 
+
+/* CARD */
 
 .card{
 
-background:#1b1b1b;
-padding:30px;
-border-radius:15px;
-margin-top:25px;
+background:
+
+linear-gradient(
+145deg,
+#17130c,
+#0e0e0e
+);
+
+padding:35px;
+
+border-radius:18px;
+
+border:1px solid #4b3b16;
+
+box-shadow:
+0 10px 40px rgba(0,0,0,.7);
 
 }
 
+
+
+.card b{
+
+color:#d4af37;
+font-size:20px;
+
+}
+
+
+
+/* QUOTE */
 
 
 .quote{
 
-font-size:28px;
+padding:90px 25px;
+
 text-align:center;
+
+font-size:30px;
+
 font-style:italic;
+
 color:#d4af37;
-padding:70px 20px;
+
+background:#050505;
+
+border-top:1px solid #4b3b16;
+border-bottom:1px solid #4b3b16;
 
 }
 
@@ -272,41 +241,7 @@ footer{
 background:#000;
 padding:30px;
 text-align:center;
-color:#888;
-
-}
-
-
-
-@media(max-width:700px){
-
-.hero h1{
-
-font-size:38px;
-
-}
-
-
-.hero h2{
-
-font-size:22px;
-
-}
-
-
-.hero p{
-
-font-size:18px;
-
-}
-
-
-nav a{
-
-display:inline-block;
-margin:8px;
-
-}
+color:#777;
 
 }
 
@@ -314,11 +249,7 @@ margin:8px;
 </style>
 
 </head>
-
-
-
 <body>
-
 
 
 <nav>
@@ -334,12 +265,13 @@ margin:8px;
 
 
 
+<!-- HERO -->
+
 <section class="hero" id="home">
 
 
 <img src="viator-logo.png" 
-alt="Viator Claritatis Logo"
-width="180">
+alt="Viator Claritatis">
 
 
 <h1>VIATOR CLARITATIS</h1>
@@ -352,21 +284,19 @@ Via Silentii et Claritatis
 
 <p>
 
-Seni Mengamati Sebelum Menyimpulkan.
+Pengembara Kejernihan.
 
-Sebuah perjalanan menuju kejernihan
+<br>
+
+Sebuah perjalanan untuk melihat realitas
 melalui keheningan, pengamatan,
-dan pemahaman yang lebih dalam
-tentang realitas.
+dan kesadaran yang lebih dalam.
 
 </p>
 
 
-
 <a class="btn" href="#about">
-
-Masuk ke Perjalanan
-
+Memulai Perjalanan
 </a>
 
 
@@ -376,29 +306,36 @@ Masuk ke Perjalanan
 
 
 
+<!-- ABOUT -->
+
 <section id="about">
 
 
-<h2>Tentang Viator Claritatis</h2>
+<h2>Tentang Viator</h2>
 
 
 <div class="card">
 
-
 <p>
 
-Viator Claritatis bukanlah sebuah dogma.
+<b>Viator Claritatis</b> bukanlah sebuah dogma,
+bukan pula kumpulan jawaban akhir.
 
-Ia adalah sebuah perjalanan.
+<br><br>
 
-Perjalanan untuk melihat realitas
-sebelum menafsirkannya.
+Ia adalah sebuah jalan perjalanan.
 
-Seorang Viator belajar mengamati
-sebelum menyimpulkan,
-mempertanyakan sebelum percaya,
-dan menemukan kejernihan melalui
-pengalaman hidup.
+<br><br>
+
+Seorang Viator belajar berhenti sejenak
+sebelum memberikan penilaian.
+
+Mengamati sebelum menyimpulkan.
+
+Mempertanyakan sebelum percaya.
+
+Dan mencari kejernihan sebelum membangun
+sebuah keyakinan.
 
 </p>
 
@@ -411,6 +348,9 @@ pengalaman hidup.
 
 
 
+
+
+<!-- FOUNDATION -->
 
 
 <section id="foundation">
@@ -424,33 +364,43 @@ pengalaman hidup.
 
 <p>
 
-<b>Keheningan</b><br>
-Ruang untuk mendengar lebih dalam
-sebelum memberikan penilaian.
 
+<b>Ⅰ. Keheningan</b>
 
-<br><br>
+<br>
 
-
-<b>Keberanian</b><br>
-Kemampuan menghadapi realitas
-tanpa berlindung di balik ilusi.
-
+Ruang batin tempat seseorang belajar
+mendengar realitas tanpa gangguan ego.
 
 <br><br>
 
 
-<b>Kerendahan Hati</b><br>
-Kesadaran bahwa pemahaman manusia
-selalu memiliki batas.
+<b>Ⅱ. Pengamatan</b>
 
+<br>
+
+Kemampuan melihat sesuatu sebagaimana adanya,
+sebelum pikiran memberi label.
 
 <br><br>
 
 
-<b>Integritas</b><br>
-Keselarasan antara pikiran,
-perkataan, dan tindakan.
+<b>Ⅲ. Kejernihan</b>
+
+<br>
+
+Kemampuan membedakan antara realitas,
+interpretasi, dan ilusi.
+
+<br><br>
+
+
+<b>Ⅳ. Kebijaksanaan</b>
+
+<br>
+
+Pemahaman yang lahir dari pengalaman,
+refleksi, dan keberanian menghadapi kenyataan.
 
 </p>
 
@@ -464,6 +414,9 @@ perkataan, dan tindakan.
 
 
 
+
+
+<!-- BOOK -->
 
 
 <section id="book">
@@ -474,12 +427,11 @@ Via Silentii et Claritatis
 </h2>
 
 
-
 <div class="card">
 
 
 <h3>
-Seni Mengamati Sebelum Menyimpulkan
+Pedoman Seorang Viator Claritatis
 </h3>
 
 
@@ -488,24 +440,35 @@ Seni Mengamati Sebelum Menyimpulkan
 
 <p>
 
-<b>Viator Claritatis</b> adalah perjalanan
-menuju kejernihan melalui pengamatan.
 
-
-<br><br>
-
-
-Buku ini mengajak pembaca memasuki ruang
-keheningan, refleksi, dan kesadaran untuk
-melihat realitas sebelum membangun
-sebuah kesimpulan.
-
+Sebuah perjalanan menuju kejernihan.
 
 <br><br>
 
+Buku ini mengajak pembaca memasuki
+laboratorium kehidupan:
 
-Bukan sekadar mencari jawaban,
-tetapi belajar melihat dengan lebih jernih.
+tempat pengalaman menjadi guru,
+keheningan menjadi ruang belajar,
+dan realitas menjadi sumber pengamatan.
+
+<br><br>
+
+Bukan untuk memberikan semua jawaban,
+tetapi untuk membangun cara melihat
+yang lebih jernih.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+<b>Status:</b>
+
+Karya dalam proses pengembangan dan publikasi.
 
 </p>
 
@@ -521,10 +484,15 @@ tetapi belajar melihat dengan lebih jernih.
 
 
 
+<!-- APHORISM -->
+
+
 <section id="aphorism">
 
 
-<h2>Manifesto Viator</h2>
+<h2>
+Aforisma Viator
+</h2>
 
 
 <div class="card">
@@ -533,20 +501,22 @@ tetapi belajar melihat dengan lebih jernih.
 <h3>
 
 
-Jangan percaya begitu saja.
+"Jangan percaya begitu saja."
 
 <br><br>
 
-Amati.
+
+"Amati."
 
 <br><br>
 
-Uji.
+
+"Uji."
 
 <br><br>
 
-Nilai sendiri.
 
+"Nilai dengan kejernihanmu sendiri."
 
 </h3>
 
@@ -568,10 +538,11 @@ Nilai sendiri.
 "Jangan memaksakan realitas
 masuk ke dalam konsep yang sempit.
 
+<br><br>
+
 Karena realitas selalu lebih luas
 daripada pikiran yang mencoba
 memahaminya."
-
 
 </div>
 
@@ -581,10 +552,15 @@ memahaminya."
 
 
 
+<!-- CONTACT -->
+
+
 <section id="contact">
 
 
-<h2>Kontak</h2>
+<h2>
+Kontak
+</h2>
 
 
 <div class="card">
@@ -592,12 +568,24 @@ memahaminya."
 
 <p>
 
-Website resmi Viator Claritatis.
+
+Website resmi:
 
 <br><br>
 
+
+<b>Viator Claritatis</b>
+
+<br><br>
+
+
 Sebuah ruang perjalanan,
 pemikiran, dan pencarian kejernihan.
+
+<br><br>
+
+
+© 2026
 
 </p>
 
@@ -612,9 +600,16 @@ pemikiran, dan pencarian kejernihan.
 
 
 
+
 <footer>
 
+
 © 2026 Viator Claritatis
+
+<br>
+
+Via Silentii et Claritatis
+
 
 </footer>
 
