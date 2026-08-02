@@ -65,7 +65,7 @@ nav a:hover{
     background:transparent;
 }
 .hero img{
-    width:100px;
+    width:50px;
     margin-bottom:30px;
     filter:drop-shadow(0 0 25px rgba(212,175,55,.45));
 }
