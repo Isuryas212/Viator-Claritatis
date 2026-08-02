@@ -14,12 +14,12 @@ html{
 
 body{
     font-family:Georgia, serif;
-    background:
-    linear-gradient(rgba(8,8,8,.88), rgba(8,8,8,.88)),
-    url("assets/images/panji.png");
+    background-image:url("assets/images/panji.png");
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
     background-attachment:fixed;
+    background-color:#080808;
     color:#eee;
     line-height:1.8;
 }
