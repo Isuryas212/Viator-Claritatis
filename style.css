@@ -54,6 +54,7 @@ nav a:hover{
 /* HERO */
 
 .hero{
+ .hero{
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -61,10 +62,8 @@ nav a:hover{
     flex-direction:column;
     text-align:center;
     padding:120px 20px 80px;
-    background:
-    radial-gradient(circle,#2b2415 0%,#111 55%,#000 100%);
+    background:transparent;
 }
-
 .hero img{
     width:180px;
     margin-bottom:30px;
