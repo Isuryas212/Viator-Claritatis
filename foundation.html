@@ -1,95 +1,391 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Utama | Viator Claritatis</title>
 
-<title>Fondasi | Viator Claritatis</title>
+    <meta name="description" content="Perpustakaan gagasan dan naskah utama Viator Claritatis karya Iwan Surya.">
 
-<link rel="icon" href="viator-favicon.png">
-<link rel="stylesheet" href="style.css">
+    <meta name="author" content="Iwan Surya">
+    <meta name="theme-color" content="#080706">
 
+    <link rel="icon" href="viator-favicon.png">
+    <link rel="stylesheet" href="style.css?v=2">
+
+    <style>
+        .foundation-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 45px 25px;
+        }
+
+        .foundation-header {
+            padding: 55px 0 40px;
+        }
+
+        .foundation-eyebrow {
+            color: var(--gold);
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .foundation-header h1 {
+            font-size: clamp(42px, 8vw, 68px);
+            font-weight: 400;
+            margin: 15px 0;
+        }
+
+        .foundation-header h2 {
+            color: var(--gold);
+            font-size: clamp(21px, 4vw, 29px);
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .foundation-header p {
+            color: var(--muted);
+            max-width: 750px;
+            font-size: 17px;
+        }
+
+        .foundation-divider {
+            height: 1px;
+            background: var(--gold-border);
+            margin: 35px 0 45px;
+        }
+
+        .foundation-group {
+            margin-bottom: 55px;
+        }
+
+        .foundation-group h2 {
+            color: var(--gold);
+            font-size: 27px;
+            margin-bottom: 8px;
+        }
+
+        .foundation-description {
+            color: var(--soft);
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
+
+        .foundation-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .foundation-card {
+            background: var(--panel);
+            border: 1px solid #493b27;
+            border-radius: 15px;
+            padding: 23px;
+            transition: .25s;
+        }
+
+        .foundation-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        .foundation-code {
+            color: var(--gold);
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .foundation-card h3 {
+            color: var(--text);
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .foundation-card p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .foundation-status {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 5px 12px;
+            border: 1px solid var(--gold-border);
+            border-radius: 20px;
+            color: var(--gold);
+            font-size: 11px;
+        }
+
+        .foundation-status.complete {
+            color: #b9cba8;
+            border-color: #62744e;
+        }
+
+        .foundation-status.developing {
+            color: #b7c9dc;
+            border-color: #566a7e;
+        }
+
+        .foundation-note {
+            padding: 25px 0;
+            border-top: 1px solid #393027;
+            margin-top: 45px;
+        }
+
+        .foundation-note p {
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .foundation-footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #393027;
+            margin-top: 40px;
+            color: var(--soft);
+            font-size: 13px;
+        }
+
+        .foundation-footer strong {
+            color: var(--gold);
+        }
+
+        .foundation-footer a {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        @media(max-width: 700px) {
+            .foundation-container {
+                padding: 30px 18px;
+            }
+
+            .foundation-header {
+                padding-top: 35px;
+            }
+
+            .foundation-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .foundation-group h2 {
+                font-size: 23px;
+            }
+
+            .foundation-card {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">Tentang</a>
-<a href="foundation.html">Fondasi</a>
-<a href="book.html">Buku</a>
-<a href="aphorism.html">Aforisma</a>
-<a href="contact.html">Kontak</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">Tentang</a>
+    <a href="foundation.html">Buku Utama</a>
+    <a href="book.html">Novel</a>
+    <a href="aphorism.html">Esai dan Ide</a>
+    <a href="contact.html">Kontak</a>
 </nav>
 
+<main class="foundation-container">
 
-<section class="hero">
+    <header class="foundation-header">
 
-<img src="viator-logo.png" width="150">
+        <p class="foundation-eyebrow">
+            PERPUSTAKAAN GAGASAN
+        </p>
 
-<h1>Fondasi Viator Claritatis</h1>
+        <h1>Buku Utama</h1>
 
-<h2>Jangan Memaksakan Realitas Masuk ke Dalam Konsep</h2>
+        <h2>Fondasi untuk membaca dan memahami kehidupan.</h2>
 
-<p>
-Kejernihan dimulai ketika manusia berani mengamati realitas
-sebelum memberi kesimpulan.
-</p>
+        <p>
+            Kumpulan naskah utama yang membangun kerangka
+            pemikiran Viator Claritatis. Setiap karya
+            mengeksplorasi cara manusia mengamati,
+            memahami, menguji, dan menyikapi realitas.
+        </p>
 
-</section>
+    </header>
 
+    <div class="foundation-divider"></div>
 
-<section>
+    <!-- FONDASI -->
 
-<h2>Prinsip Dasar</h2>
+    <section class="foundation-group">
 
-<div class="card">
+        <h2>Naskah Fondasi</h2>
 
-<p>
-<b>1. Mengamati Sebelum Menyimpulkan</b><br>
-Realitas tidak selalu sesuai dengan konsep yang kita miliki.
-Kejernihan lahir dari keberanian melihat apa adanya.
-</p>
+        <p class="foundation-description">
+            Karya yang membentuk dasar pemikiran
+            dan kerangka Viator Claritatis.
+        </p>
 
-<p>
-<b>2. Menyaring Pemahaman</b><br>
-Setiap gagasan perlu diuji melalui pengalaman, pengamatan,
-dan refleksi.
-</p>
+        <div class="foundation-grid">
 
-<p>
-<b>3. Perjalanan Tanpa Henti</b><br>
-Kejernihan bukan titik akhir, melainkan proses perjalanan
-seorang Viator.
-</p>
+            <article class="foundation-card">
+                <div class="foundation-code">VC-001</div>
 
-</div>
+                <h3>Via Silentii et Claritatis</h3>
 
-</section>
+                <p>
+                    Pedoman seorang Viator Claritatis.
+                    Perjalanan menuju kejernihan melalui
+                    keheningan, pengamatan, dan pemahaman realitas.
+                </p>
 
+                <span class="foundation-status">
+                    Fondasi
+                </span>
+            </article>
 
-<section>
+            <article class="foundation-card">
+                <div class="foundation-code">VC-002</div>
 
-<h2>Siklus Kejernihan</h2>
+                <h3>Arsitektur Realitas</h3>
 
-<div class="card">
+                <p>
+                    Eksplorasi tentang realitas,
+                    struktur pemahaman, dan cara manusia
+                    membangun pengetahuan.
+                </p>
 
-<p>
-Mengamati → Memahami → Menguji → Menyadari → Mengamati kembali.
-</p>
+                <span class="foundation-status">
+                    Fondasi
+                </span>
+            </article>
 
-</div>
+            <article class="foundation-card">
+                <div class="foundation-code">VC-013</div>
 
-</section>
+                <h3>Viator Math</h3>
 
+                <p>
+                    Eksplorasi hubungan matematika,
+                    pola, dan proses memahami realitas
+                    melalui pendekatan Viator.
+                </p>
 
-<footer>
+                <span class="foundation-status">
+                    Fondasi
+                </span>
+            </article>
 
-© 2026 Viator Claritatis
+        </div>
 
-</footer>
+    </section>
 
+    <div class="foundation-divider"></div>
+
+    <!-- NASKAH SELESAI -->
+
+    <section class="foundation-group">
+
+        <h2>Naskah Selesai</h2>
+
+        <p class="foundation-description">
+            Karya yang telah mencapai penyelesaian naskah.
+        </p>
+
+        <div class="foundation-grid">
+
+            <article class="foundation-card">
+                <div class="foundation-code">VC-003</div>
+
+                <h3>Ars Vivendi</h3>
+
+                <p>
+                    Belajar Hidup Setelah Melihat dan Memahami.
+                    Sebuah instrumen untuk membaca kehidupan
+                    melalui realitas, pengalaman, dan pemahaman.
+                </p>
+
+                <span class="foundation-status complete">
+                    Naskah Selesai
+                </span>
+            </article>
+
+        </div>
+
+    </section>
+
+    <div class="foundation-divider"></div>
+
+    <!-- PROYEK TERBUKA -->
+
+    <section class="foundation-group">
+
+        <h2>Proyek Terbuka</h2>
+
+        <p class="foundation-description">
+            Gagasan dan naskah yang masih dalam perjalanan
+            pengembangan.
+        </p>
+
+        <div class="foundation-grid">
+
+            <article class="foundation-card">
+                <div class="foundation-code">VC-014</div>
+
+                <h3>Saranjana yang Misterius</h3>
+
+                <span class="foundation-status developing">
+                    Proyek Terbuka
+                </span>
+            </article>
+
+            <article class="foundation-card">
+                <div class="foundation-code">VC-015</div>
+
+                <h3>Balada Talasemi</h3>
+
+                <span class="foundation-status developing">
+                    Proyek Terbuka
+                </span>
+            </article>
+
+        </div>
+
+    </section>
+
+    <div class="foundation-note">
+
+        <p>
+            Viator Claritatis bukan kumpulan jawaban
+            yang harus diterima begitu saja.
+            Setiap naskah merupakan ruang untuk
+            mengamati, mempertanyakan, dan menguji
+            pemahaman terhadap kehidupan.
+        </p>
+
+    </div>
+
+    <footer class="foundation-footer">
+
+        <p><strong>VIATOR CLARITATIS</strong></p>
+
+        <p>Via Silentii et Claritatis</p>
+
+        <p>© 2026 Iwan Surya</p>
+
+        <a href="index.html">
+            Kembali ke Beranda ↑
+        </a>
+
+    </footer>
+
+</main>
 
 </body>
 </html>
